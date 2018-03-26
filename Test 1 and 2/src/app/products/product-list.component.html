@@ -1,0 +1,47 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top:20px; margin-bottom:20px;">
+            <div class="col-md-3 col-md-offset-9 col-lg-3 col-lg-offset-9">
+                <button class="btn btn-primary" type="button">
+                    Cart
+                    <span class="badge">{{nuOfItems}}</span> Items
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container products">
+        <div *ngFor='let product of products'>
+            <div class="col-md-3" *ngFor='let prod of product.variants'>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x222" alt="">
+                    <div class="caption">
+                        <h4>
+                            <a [routerLink]="['/products', product.id, prod.id]">{{product.title}} - {{prod.title}}</a>
+                        </h4>
+                        <h4 class="">${{prod.price}}</h4>
+                        <h4>
+                            by {{product.vendor}}
+                        </h4>
+                        <button type="button" class="btn btn-primary" (click)='addToCart()'>Add to Cart</button>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right"># reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf='errorMessage' class='alert alert-danger'>
+    Error: {{ errorMessage }}
+</div>

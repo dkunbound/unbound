@@ -1,0 +1,173 @@
+[
+    {
+      "id": 81174298639,
+      "title": "source pan",
+      "handle": "handle-goes-here",
+      "body_html": "Body html goes here",
+      "published_at": "2018-03-16T10:14:41-04:00",
+      "created_at": "2017-11-08T17:12:04-05:00",
+      "updated_at": "2018-03-16T10:14:43-04:00",
+      "vendor": "CampUSA",
+      "product_type": "Set",
+      "tags": [
+        "admin_sell_down",
+        "sets"
+      ],
+      "variants": [
+        {
+          "id": 878411808783,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "SKU goes here",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "10.00",
+          "grams": 590,
+          "compare_at_price": "45.00",
+          "position": 1,
+          "product_id": 81174298639,
+          "created_at": "2017-11-08T17:12:04-05:00",
+          "updated_at": "2018-03-11T18:40:55-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 587525718031,
+          "created_at": "2017-11-14T11:26:36-05:00",
+          "position": 1,
+          "updated_at": "2017-11-14T11:26:36-05:00",
+          "product_id": 81174298639,
+          "variant_ids": [
+
+          ],
+          "src": "imageURL",
+          "width": 900,
+          "height": 600
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9602882575,
+      "title": "spoon",
+      "handle": "handle-two",
+      "body_html": "body html",
+      "published_at": "2018-03-05T16:44:41-05:00",
+      "created_at": "2016-11-25T13:39:10-05:00",
+      "updated_at": "2018-03-19T05:03:21-04:00",
+      "vendor": "Unbound",
+      "product_type": "Camping",
+      "tags": [
+        "admin_core_product",
+        "admin_in_stock_core",
+        "admin_needs_weight",
+        "Gold",
+        "Blue",
+        "Red",
+        "Silver"
+      ],
+      "variants": [
+        {
+          "id": 38237768719,
+          "title": "Gold",
+          "option1": "Gold",
+          "option2": null,
+          "option3": null,
+          "sku": "SKU goes here",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 29510533071,
+            "product_id": 9602882575,
+            "position": 1,
+            "created_at": "2017-08-17T04:43:30-04:00",
+            "updated_at": "2017-12-15T13:45:01-05:00",
+            "alt": null,
+            "width": 900,
+            "height": 600,
+            "src": "imgURL",
+            "variant_ids": [
+              38237768719
+            ]
+          },
+          "available": true,
+          "price": "24.00",
+          "grams": 65,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 9602882575,
+          "created_at": "2017-03-08T12:51:43-05:00",
+          "updated_at": "2018-03-19T05:03:21-04:00"
+        },
+        {
+          "id": 38237768655,
+          "title": "Silver",
+          "option1": "Silver",
+          "option2": null,
+          "option3": null,
+          "sku": "SKU here",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 29510533455,
+            "product_id": 9602882575,
+            "position": 2,
+            "created_at": "2017-08-17T04:43:31-04:00",
+            "updated_at": "2017-12-15T13:45:01-05:00",
+            "alt": null,
+            "width": 900,
+            "height": 600,
+            "src": "imgURL",
+            "variant_ids": [
+              38237768655
+            ]
+          },
+          "available": false,
+          "price": "24.00",
+          "grams": 65,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 9602882575,
+          "created_at": "2017-03-08T12:51:43-05:00",
+          "updated_at": "2018-02-15T11:00:32-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 29510533071,
+          "created_at": "2017-08-17T04:43:30-04:00",
+          "position": 1,
+          "updated_at": "2017-12-15T13:45:01-05:00",
+          "product_id": 9602882575,
+          "variant_ids": [
+            38237768719
+          ],
+          "src": "imgURL",
+          "width": 900,
+          "height": 600
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "position": 1,
+          "values": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ]
+    }
+  ]
