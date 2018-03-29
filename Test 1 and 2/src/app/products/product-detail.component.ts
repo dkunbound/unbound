@@ -28,7 +28,7 @@ export class ProductDetailComponent implements OnInit {
     const param = this._route.snapshot.paramMap.get('id');    
     if (param) {
       const id = +param;
-      this.getProduct(id);      
+      this.getProduct(id);
     }    
   }
 
@@ -42,10 +42,7 @@ export class ProductDetailComponent implements OnInit {
         this._productService.getProductGiphys(this.product.title).subscribe(
           img => {
             this.imagesfromGiphy = img; 
-            this.images = this.imagesfromGiphy.data;
-            console.log('ooooooooooo');
-            console.log(this.images);    
-            console.log('ooooooooooo');       
+            this.images = this.imagesfromGiphy.data;     
           },
           error => this.errorMessage = <any>error);
       },

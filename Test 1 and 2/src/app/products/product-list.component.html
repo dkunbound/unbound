@@ -13,18 +13,16 @@
         </div>
     </div>
     <div class="container products">
-        <div *ngFor='let product of products'>
-            <div class="col-md-3" *ngFor='let prod of product.variants'>
+        <div class="product-container" *ngFor='let product of products.products'>
+            <div class="col-md-2" *ngFor='let prod of product.variants'>
                 <div class="thumbnail">
-                    <img src="http://placehold.it/350x222" alt="">
+                    <img src="{{product.images[0].src}}" alt="http://placehold.it/350x222">
                     <div class="caption">
-                        <h4>
-                            <a [routerLink]="['/products', product.id, prod.id]">{{product.title}} - {{prod.title}}</a>
-                        </h4>
+                        <a class="product-title" [routerLink]="['/products', product.id, prod.id]">{{product.title}} - {{prod.title}}</a>
                         <h4 class="">${{prod.price}}</h4>
-                        <h4>
+                        <h5>
                             by {{product.vendor}}
-                        </h4>
+                        </h5>
                         <button type="button" class="btn btn-primary" (click)='addToCart()'>Add to Cart</button>
                     </div>
                     <div class="ratings">

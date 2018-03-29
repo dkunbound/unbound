@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+	padding: 0;
+	width: 100%!important;
+}
+
+.product-container {
+
+}
+
+.product-title {
+	display: block;
+	min-height: 80px;
+}
+
 li {
     font-size: large;
 }

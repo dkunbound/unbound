@@ -10,7 +10,7 @@ import { IProduct } from './product';
 
 @Injectable()
 export class ProductService {
-    private _productUrl = './api/products/products.json';
+    private _productUrl = 'https://unboundbabes.com/products.json';
     private _giphyUrl = 'http://api.giphy.com/v1/gifs/search?q=';
     private _giphy: any;
     constructor(private _http: HttpClient) { }
@@ -35,7 +35,8 @@ export class ProductService {
 
     getProduct(id: number): Observable<IProduct> {
         return this.getProducts()
-            .map((products: IProduct[]) => products.find(p => p.id === id));
+            .map((products: any) => products.products.find(p => p.id === id));
+            
     }
 
     private handleError(err: HttpErrorResponse) {

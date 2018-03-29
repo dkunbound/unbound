@@ -16,7 +16,7 @@
                 </div>
                 <div class='row'>
                     <div class='col-md-3'>Description:</div>
-                    <div class='col-md-6'>{{product.body_html}}</div>
+                    <div class='col-md-6' ng-bind-html-unsafe="product.body_html"></div>
                 </div>
                 <div class='row'>
                     <div class='col-md-3'>SKU:</div>
@@ -36,14 +36,14 @@
                 </div>
             </div>
             <div class='col-md-6'>
-                <img class='center-block img-responsive' [style.width.px]='200' [style.margin.px]='2' [src]='imageUrl' [title]='product.productName'>
+                <img class='center-block img-responsive' [style.width.px]='200' [style.margin.px]='2' [src]='product.images[0].src' [title]='product.productName'>
             </div>
         </div>
         <div class="row" style="margin-top:20px;" *ngIf="images">
             <div class="imagesfromGiphy">
                 <div class="col-xs-6 col-md-3" *ngFor='let img of images'>
                     <div class="thumbnail">
-                        <img [src]='img.images.original_still.url'>
+                        <img src='{{img.images.original_still.url}}'>
                     </div>
                 </div>
             </div>
